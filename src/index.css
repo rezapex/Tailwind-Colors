@@ -1,0 +1,266 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --rose-50: 255 241 242;
+  --rose-100: 255 228 230;
+  --rose-200: 254 205 211;
+  --rose-300: 253 164 175;
+  --rose-400: 251 113 133;
+  --rose-500: 244 63 94;
+  --rose-600: 225 29 72;
+  --rose-700: 190 18 60;
+  --rose-800: 159 18 57;
+  --rose-900: 136 19 55;
+  --rose-950: 76 5 25;
+
+  --pink-50: 253 242 248;
+  --pink-100: 252 231 243;
+  --pink-200: 251 207 232;
+  --pink-300: 249 168 212;
+  --pink-400: 244 114 182;
+  --pink-500: 236 72 153;
+  --pink-600: 219 39 119;
+  --pink-700: 190 24 93;
+  --pink-800: 157 23 77;
+  --pink-900: 131 24 67;
+  --pink-950: 80 7 36;
+
+  --fuchsia-50: 253 244 255;
+  --fuchsia-100: 250 232 255;
+  --fuchsia-200: 245 208 254;
+  --fuchsia-300: 240 171 252;
+  --fuchsia-400: 232 121 249;
+  --fuchsia-500: 217 70 239;
+  --fuchsia-600: 192 38 211;
+  --fuchsia-700: 162 28 175;
+  --fuchsia-800: 134 25 143;
+  --fuchsia-900: 112 26 117;
+  --fuchsia-950: 74 4 78;
+
+  --purple-50: 250 245 255;
+  --purple-100: 243 232 255;
+  --purple-200: 233 213 255;
+  --purple-300: 216 180 254;
+  --purple-400: 192 132 252;
+  --purple-500: 168 85 247;
+  --purple-600: 147 51 234;
+  --purple-700: 126 34 206;
+  --purple-800: 107 33 168;
+  --purple-900: 88 28 135;
+  --purple-950: 59 7 100;
+
+  --violet-50: 245 243 255;
+  --violet-100: 237 233 254;
+  --violet-200: 221 214 254;
+  --violet-300: 196 181 253;
+  --violet-400: 167 139 250;
+  --violet-500: 139 92 246;
+  --violet-600: 124 58 237;
+  --violet-700: 109 40 217;
+  --violet-800: 91 33 182;
+  --violet-900: 76 29 149;
+  --violet-950: 46 16 101;
+
+  --indigo-50: 238 242 255;
+  --indigo-100: 224 231 255;
+  --indigo-200: 199 210 254;
+  --indigo-300: 165 180 252;
+  --indigo-400: 129 140 248;
+  --indigo-500: 99 102 241;
+  --indigo-600: 79 70 229;
+  --indigo-700: 67 56 202;
+  --indigo-800: 55 48 163;
+  --indigo-900: 49 46 129;
+  --indigo-950: 30 27 75;
+
+  --blue-50: 239 246 255;
+  --blue-100: 219 234 254;
+  --blue-200: 191 219 254;
+  --blue-300: 147 197 253;
+  --blue-400: 96 165 250;
+  --blue-500: 59 130 246;
+  --blue-600: 37 99 235;
+  --blue-700: 29 78 216;
+  --blue-800: 30 64 175;
+  --blue-900: 30 58 138;
+  --blue-950: 23 37 84;
+
+  --cyan-50: 236 254 255;
+  --cyan-100: 207 250 254;
+  --cyan-200: 165 243 252;
+  --cyan-300: 103 232 249;
+  --cyan-400: 34 211 238;
+  --cyan-500: 6 182 212;
+  --cyan-600: 8 145 178;
+  --cyan-700: 14 116 144;
+  --cyan-800: 21 94 117;
+  --cyan-900: 22 78 99;
+  --cyan-950: 8 51 68;
+
+  --teal-50: 240 253 250;
+  --teal-100: 204 251 241;
+  --teal-200: 153 246 228;
+  --teal-300: 94 234 212;
+  --teal-400: 45 212 191;
+  --teal-500: 20 184 166;
+  --teal-600: 13 148 136;
+  --teal-700: 15 118 110;
+  --teal-800: 17 94 89;
+  --teal-900: 19 78 74;
+  --teal-950: 4 47 46;
+
+  --emerald-50: 236 253 245;
+  --emerald-100: 209 250 229;
+  --emerald-200: 167 243 208;
+  --emerald-300: 110 231 183;
+  --emerald-400: 52 211 153;
+  --emerald-500: 16 185 129;
+  --emerald-600: 5 150 105;
+  --emerald-700: 4 120 87;
+  --emerald-800: 6 95 70;
+  --emerald-900: 6 78 59;
+  --emerald-950: 2 44 34;
+
+  --green-50: 240 253 244;
+  --green-100: 220 252 231;
+  --green-200: 187 247 208;
+  --green-300: 134 239 172;
+  --green-400: 74 222 128;
+  --green-500: 34 197 94;
+  --green-600: 22 163 74;
+  --green-700: 21 128 61;
+  --green-800: 22 101 52;
+  --green-900: 20 83 45;
+  --green-950: 5 46 22;
+
+  --lime-50: 247 254 231;
+  --lime-100: 236 252 203;
+  --lime-200: 217 249 157;
+  --lime-300: 190 242 100;
+  --lime-400: 163 230 53;
+  --lime-500: 132 204 22;
+  --lime-600: 101 163 13;
+  --lime-700: 77 124 15;
+  --lime-800: 63 98 18;
+  --lime-900: 54 83 20;
+  --lime-950: 26 46 5;
+
+  --yellow-50: 254 252 232;
+  --yellow-100: 254 249 195;
+  --yellow-200: 254 240 138;
+  --yellow-300: 253 224 71;
+  --yellow-400: 250 204 21;
+  --yellow-500: 234 179 8;
+  --yellow-600: 202 138 4;
+  --yellow-700: 161 98 7;
+  --yellow-800: 133 77 14;
+  --yellow-900: 113 63 18;
+  --yellow-950: 66 32 6;
+
+  --amber-50: 255 251 235;
+  --amber-100: 254 243 199;
+  --amber-200: 253 230 138;
+  --amber-300: 252 211 77;
+  --amber-400: 251 191 36;
+  --amber-500: 245 158 11;
+  --amber-600: 217 119 6;
+  --amber-700: 180 83 9;
+  --amber-800: 146 64 14;
+  --amber-900: 120 53 15;
+  --amber-950: 69 26 3;
+
+  --orange-50: 255 247 237;
+  --orange-100: 255 237 213;
+  --orange-200: 254 215 170;
+  --orange-300: 253 186 116;
+  --orange-400: 251 146 60;
+  --orange-500: 249 115 22;
+  --orange-600: 234 88 12;
+  --orange-700: 194 65 12;
+  --orange-800: 154 52 18;
+  --orange-900: 124 45 18;
+  --orange-950: 67 20 7;
+
+  --red-50: 254 242 242;
+  --red-100: 254 226 226;
+  --red-200: 254 202 202;
+  --red-300: 252 165 165;
+  --red-400: 248 113 113;
+  --red-500: 239 68 68;
+  --red-600: 220 38 38;
+  --red-700: 185 28 28;
+  --red-800: 153 27 27;
+  --red-900: 127 29 29;
+  --red-950: 69 10 10;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
